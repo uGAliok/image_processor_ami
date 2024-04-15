@@ -1,0 +1,49 @@
+add_executable(
+        image_processor
+        Tools/Applier.cpp
+        Tools/Applier.h
+        Filters/Crop.cpp
+        Filters/Grayscale.cpp
+        Filters/Negative.cpp
+        Filters/Sharpening.cpp
+        Filters/EdgeDetection.cpp
+        Filters/GaussianBlur.cpp
+        Filters/FishEye.cpp
+        Filters/Filters.h
+        Tools/Launcher.cpp
+        Tools/Launcher.h
+        Tools/Parser.cpp
+        Tools/Parser.h
+        Image/RGB.h
+        Image/RGB.cpp
+        Image/Image.h
+        Image/Image.cpp
+        Tools/FileHandler.h
+        Tools/FileHandler.cpp
+        image_processor.cpp
+)
+
+add_catch(
+        test_image_processor
+        unit_tests.cpp
+        Tools/Applier.cpp
+        Tools/Applier.h
+        Filters/Crop.cpp
+        Filters/Grayscale.cpp
+        Filters/Negative.cpp
+        Filters/Sharpening.cpp
+        Filters/EdgeDetection.cpp
+        Filters/GaussianBlur.cpp
+        Filters/FishEye.cpp
+        Filters/Filters.h
+        Tools/Launcher.cpp
+        Tools/Launcher.h
+        Tools/Parser.cpp
+        Tools/Parser.h
+        Image/RGB.h
+        Image/RGB.cpp
+        Image/Image.h
+        Image/Image.cpp
+        Tools/FileHandler.h
+        Tools/FileHandler.cpp
+)
